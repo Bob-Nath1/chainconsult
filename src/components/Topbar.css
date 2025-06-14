@@ -1,0 +1,193 @@
+.top-header {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  transform: translate(-1.3rem, 0rem);
+  z-index: 2;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1.5fr 0.4fr 5fr 1.3fr 0.7fr;
+  gap: 0.63rem;
+  width: 100vw; /* Ensures full screen width */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  border: 1px solid #ADD8E6;
+  border-width: 0 0 0.1rem 0;
+  border-radius: 0.56rem 0.56rem 0 0;
+  box-sizing: border-box;
+}
+
+.grid-container > div {
+  height: 3.06rem;
+  display: flex;
+  align-items: center;
+}
+
+.grid-container > div:not(:last-child) {
+  position: relative;
+}
+
+.grid-container > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-right: 1px solid #ADD8E6; /* add color value */
+}
+
+.empty {
+  min-height: 1.3rem;
+  max-width: 21.88rem;
+}
+
+.inbox-icon {
+  font-size: 1.13rem;
+  transform: translateX(-0.25rem);
+  margin-left: 0.1rem;
+}
+
+.gmail-input {
+  font-size:1 rem;
+  font-weight: bold;
+}
+
+.nigeria-flag img {
+object-fit: cover;
+height: 2.19rem;
+width: 2.19rem;
+border-radius: 50%;
+transform: translate(0.31rem, -3.63rem);
+}
+
+
+.largest-portion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(1.88rem);
+}
+
+.phone-contact p{
+  font-size: 1rem;
+  font-weight: bold;
+justify-self: flex-start ; 
+margin-left: -1.4rem;
+}
+
+
+
+
+ 
+  .select-wrapper{
+    display: flex;
+  align-items: center;
+  transform: translate(-1rem, 0.2rem); 
+  font-size: 1.4rem;
+  font-weight: bold;
+  flex-grow: 1;
+  margin-left: rem;
+  margin-top: -0.3rem;
+  position: relative;
+  }
+
+  .select-wrapper ul{
+     display: flex;
+  gap: 2.4rem;
+  position: relative;
+  }
+ .select-wrapper ul li{
+text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  
+ }
+
+ .select-wrapper ul ul{
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 7.5rem;
+  padding:0.75rem 1rem;
+  margin-top: 0.19rem;
+  top: 100%;
+  border-top:0.25rem solid #051753 ;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), -0.125rem 0 0.25rem rgba(0, 0, 0, 0.1), 0.125rem 0  0.25rem rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 3;
+ }
+ .select-wrapper:hover ul ul,
+ .select-wrapper ul li:hover > ul,
+ .select-wrapper .ul:hover{
+
+display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 30s ease-in-out;
+ }
+
+
+ .select-wrapper ul ul li{
+   display: block;
+  margin-bottom: 10px;
+ }
+  
+
+.careers span{
+  font-size: 1rem;
+  font-weight: bold;
+  transform: translateX(-0.625rem);
+}
+
+.careers span {
+  font-size: 0.88rem;
+  margin-left: 3.69rem;
+}
+
+
+.last-empty {
+  min-height: 1.25rem;
+  transform: translateX(2.69rem);
+}
+
+/* Media query for tablet devices and above */
+/*  */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .grid-container > div {
+    height: auto;
+  }
+  .inbox-icon {
+    font-size: 14px;
+  }
+  .gmail-input {
+    font-size: 0.8rem;
+  }
+  .nigeria-flag img {
+    height: 25px;
+    width: 25px;
+  }
+  .select-wrapper {
+    font-size: 1rem;
+  }
+  .largest-portion {
+    flex-direction: column;
+  }
+  .phone-contact p {
+    margin-left: 0;
+  }
+}
+

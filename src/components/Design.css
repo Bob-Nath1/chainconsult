@@ -1,0 +1,126 @@
+.carousel {
+  grid-column: 1;
+  grid-row: 3;
+  width: 100%;
+}
+
+.carousel2 {
+  width: 100%;
+}
+
+.logo-group {
+  display: flex;
+  gap: 0.125rem;
+  justify-content: center;
+}
+
+.logo {
+  width: 3.125rem;
+  height: 3.125rem;
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+
+.slide {
+  padding: 0 0.625rem;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  transform: translateY(-2.9375rem);
+  z-index: 1;
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+.flincap {
+  margin-top: -6.25rem;
+}
+
+.bayelsa {
+  margin-top: -3.125rem;
+}
+
+.ohub {
+  margin-top: 1.875rem;
+}
+
+.gacmotor {
+  margin-top: 2.4375rem;
+}
+
+.verdant {
+  margin-top: 1.5rem;
+}
+
+.palpensions {
+  margin-top: -2.3125rem;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.slide img:hover {
+  filter: grayscale(0%);
+}
+
+.slide img:focus {
+  outline: none;
+  border: none;
+}
+
+
+/* ... existing styles ... */
+
+/* Media queries for responsive design */
+
+/* For large screens (desktops) */
+/* @media only screen and (min-width: 75rem) {
+  .slider-container {
+    width: 80%;
+    transform: translateY(-44.375rem);
+  }
+  .slide {
+    padding: 0 0.625rem;
+  }
+} */
+
+/* For medium screens (tablets) */
+/* @media only screen and (min-width: 48rem) and (max-width: 74.99rem) {
+  .slider-container {
+    width: 90%;
+    transform: translateY(-0.3125rem);
+  }
+  .slide {
+    padding: 0 0.3125rem;
+  }
+} */
+/* 
+/* For small screens (mobile devices) */
+@media only screen and (max-width: 47.99rem) {
+/*   .slider-container {
+    width: 100%;
+    transform: translateY(-11.875rem);
+  }
+  .slide {
+    padding: 0;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+} 
+ */

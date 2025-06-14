@@ -1,0 +1,136 @@
+.full-screen {
+     width: 100vw;
+      height: 100vh;
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #02141a;
+    margin-top: 385px;
+    text-align: center;
+}
+
+.cont-integrate {
+    position: relative;
+    width: 1100px;
+  height: 500px;
+  border: 1px solid rgba(222, 234, 247, 0.1);
+   border-radius: 200px;
+   margin: 0 auto;
+}
+.integrate{
+     position: absolute;
+      top: 12%;
+  left: 50%;
+  transform: translate(-50%, -40% );
+  font-size: 7rem;
+color: rgba(255, 255, 255, 0.05);
+  font-weight: 900;
+   z-index: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.main-contentt span{
+    padding: 0.8rem;
+}
+.main-contentt h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-contentt .slash{
+color: #051753;
+}
+
+.sub-headd {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  line-height: 4rem;
+  margin-bottom: 24px;
+}
+
+
+.sub-textt {
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.main-contentt {
+  position: relative;
+  z-index: 1;
+  padding-top: 78px;
+}
+
+
+.integrat {
+  font-size: 1rem;
+    font-weight: 600;
+  padding: 1rem 1.2rem;
+  margin-top: 30px;
+  background-color: transparent;
+  text-decoration: none;
+   color: white;
+  border: 1px solid rgba(222, 234, 247, 0.1);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.integrat:hover {
+  background-color: #051753;
+  color: white;
+  border-color: #051753;
+}
+
+.square {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* subtle border */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* optional soft shadow */
+  transition: background-color 0.3s;
+}
+
+.square img{
+  margin-top: 10px;
+  width: 78px;
+  height: 75px;
+  transition: filter 0.3s;
+}
+
+.square:hover {
+  background-color: #051753;
+}
+
+.square:hover img {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.react{
+  transform: translate(80px,-477px);
+}
+
+.node{
+  transform: translate(-47px, -350px);
+}
+
+.vue{
+  transform: translate(80px, -224px );
+}
+
+
+.apple{
+  transform: translate(915px, -777px);
+}
+.microsoft{
+  transform: translate(1045px, -647px);
+}
+.ethereum{
+  transform: translate(915px, -523px);
+}
